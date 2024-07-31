@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bodmas.js"></script>
+    <link rel="stylesheet" href="bodmas.css">
+</head>
+<body>
+    <div>
+        <form action="">
+            <div id="uni">
+                <div class="red">
+                    <div>
+                        <div>INPUT</div>
+                        <div>
+                            <input type="number" placeholder="Number 1" id="in">
+                        </div>
+                    </div>
+
+                
+                    <div>
+                        <div>INPUT</div>
+                        <div>
+                            <input type="number" placeholder="Number 2" id="put">
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+                <div class="big">
+                    <input type="number" placeholder="Result" id="display" disabled><br>
+                    
+                </div>
+                <br>
+                <div id="big">
+                    <input type="number" class="stress" placeholder="Result 2" id="stress" disabled>
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+    
+    <ul>
+        <li><button onclick="sum()">Addition</button></li><br>
+        <li><button onclick="minus()">Subtraction</button></li><br>
+        <li><button onclick="times()">Multiplication</button></li><br>
+        <li><button onclick="divide()">Division</button></li><br>
+        <li><button class="stress" onclick="square()">Square</button></li><br>
+        <li><button class="stone" onclick="squareroot()">Square root</button></li><br>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>creating dom objects</title>
+<style type="text/css">
+  /* *{
+    margin: 0;
+    padding: 0;
+  } */
+ #top{
+        width: 100%;
+        height:120px;
+        /* background-color:green; */
+    }
+ #top2{
+        margin-top:-50px;
+        width: 100%;
+        height:100px;
+        border-top: solid 0.5px black;
+        /* background-color:red; */
+    }
+    #main{
+        width:100%;
+        height:500px;
+        background-color:gray;
+    }
+
+    .floatin{
+            float: left;
+         }   
+        
+    .mbonu2{
+                margin-left:70px;
+                margin-top: 20px;
+                width:8%;
+                height:70px;
+                margin-bottom: 10px;
+                float:left;
+                position: relative;
+                background-color:gray;
+            }
+            .mbonu3{
+                margin-left:55px;
+                margin-top: 20px;
+                width: 40%;
+                height: 200px;
+                margin-bottom: 10px;
+                float: right;
+                background-color:gray;
+                }
+          .m1{ 
+                margin-right: 2 0px;
+                margin-top: 20px;
+                width: 12%;
+                height: 28px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float:left;
+                /* background-color: aqua; */
+                font-size: 35px;
+                font-weight:bold;
+            }
+            .m2,.m3,.m4{
+                margin-left:220px;
+                margin-top: 20px;
+                width: 15%;
+                height: 20px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float: left;
+                /* background-color: palevioletred; */
+                }
+            
+                
+             .m5{
+                margin-inline:20px;
+                margin-top: 20px;
+                width: 5%;
+                height: 30px;
+                border: solid 5px olive;
+                margin-bottom: 10px;
+                float: left;
+                 background-color: olive; 
+                 
+                }
+            
+                
+        .m6,.m7,.m8,.m9,.m10,.m11{
+                margin-left: 100px;
+                margin-top: 20px;
+                width: 5%;
+                height: 20px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float: left;
+                /* background-color: palevioletred; */
+                position:relative
+                }
+
+
+
+            .m12{
+                margin-right:20px;
+                margin-top: 20px;
+                width: 5%;
+                height: 30px;
+                 border: solid 5px  palevioletred; 
+                margin-bottom: 10px;
+                float: right;
+                background-color: palevioletred;
+                border-radius: 10px;
+                }
+                .orange{
+                    color:orangered;
+                    }
+
+                    .white{
+                    color:white;
+                    }
+
+                    .m6:hover,.m7:hover,.m8:hover,.m9:hover,.m10:hover,.m11:hover{
+                  color: blue;
+            text-decoration: none;
+            /* border: 5px solid red; */
+            /* padding: 5px 5px; */
+            /* background-color: red; */
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+
+                    .m5:hover{
+                  color: blue;
+            text-decoration: none;
+            border: 5px solid rgb(131, 184, 27); 
+            /* padding: 5px 5px; */
+            background-color: rgb(131, 184, 27);
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+                    .m12:hover{
+                  color: blue;
+            text-decoration: none;
+            border: 5px solid red;
+            /* padding: 5px 5px; */
+            background-color: red;
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+                    h4{
+                        padding: 0;
+                        margin-top: -8px;
+                        font-size: 20px;
+                    }
+                    h5{
+                        margin-top:-15px;
+                        font-size: 25;
+                    }
+
+
+
+                    *{
+        box-sizing: border-box;
+      } 
+      
+       .left {
+        float: left;
+        width: 20%;
+        padding: 0 20px;
+        height: 200px;
+        background-color: #3d4446;
+      } 
+      
+      .right {
+        background-color: #3d4446;
+        float: left;
+        width: 80%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+      
+      .circle{
+                      width:35px;
+                      height:35px;
+                      background-color: red;
+                      border-radius: 50%;
+                      margin-top:8px;
+                      margin:20px;
+          }
+      
+      
+      .autoflow{overflow:auto;} 
+      
+      
+      
+      
+      .right{
+        text-align: left;
+        height: 207px;
+        margin-top: -7px;
+      }
+      
+      .left{
+        text-align: left;
+        height: 200px;
+        margin-top: 0px;
+      }
+      
+      .right h4{
+        margin-top: 10px;
+      }
+      
+      .right h1{
+        margin-top: -5px;
+        padding-right:67%;
+        margin-right:10px ;
+      }
+      
+      .right div{
+        color: beige;
+        background-color: orange;
+        border: 1px solid orange;
+        border-radius: 5%;
+        padding: 10px;
+        height: 40px;
+        width: 120px;
+        margin-top: -5px;
+      }
+
+
+ 
+      .containerVIII{
+width:100%;
+height:500px;
+background-color:grey;
+
+}
+
+.velocity1{
+width:60%;
+height:100px;
+text-align:center;
+color:blue;
+float:right;
+}
+
+.velocity2{
+width:100%;
+height:500px;
+background-image:url('blog-1.jpg');
+background-repeat:no-repeat;
+margin-left:120px;
+
+
+}
+
+h2{
+color:red;
+
+float:right;
+margin-right:490px;
+border-width:20px;
+}
+
+
+
+
+
+
+.container{
+                background-color:white;
+                width:100%;
+                height:500px;
+            }
+
+.container1,.container2{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width:100%;
+            }
+.container1{
+		            padding-top:40px;
+                margin-bottom:20px;
+
+}
+            .square{
+                width: 22.5%;
+                height: 200px;
+                background-color: yellowgreen;
+                margin-left: 10px;
+                margin-right:10px;
+                border-radius:30px;
+            }
+
+
+
+	#apple{
+
+                width: 200px;
+                height: 200px;
+                background-color:pink;
+                margin: 10px;}
+
+#img1{
+background-image:url('cat-1.jpg')}
+#img2{
+background-image:url('cat-2.jpg')}
+
+#img3{
+background-image:url('cat-3.jpg')}
+#img4{
+background-image:url('cat-4.jpg')}
+#img5{
+background-image:url('cat-5.jpg')}
+#img6{
+background-image:url('cat-6.jpg')}
+#img7{
+background-image:url('cat-7.jpg')}
+#img8{
+background-image:url('cat-8.jpg')}
+
+
+
+
+.containerXI{
+                width: 100%;
+                 /* height:700px;  */
+                display: flex;
+                justify-content: center;
+        
+            }
+
+            .base1{
+                width:240px;
+                height:200px;
+                background-image:url('cat-1.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+            }
+
+            .base2{
+                width:240px;
+                height:200px;
+                background-image:url('cat-2.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            }
+
+            .base3{
+                width:240px;
+                height:200px;
+                background-image:url('cat-3.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            }
+
+            .base4{
+                width:240px;
+                height:200px;
+                background-image:url('cat-4.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            }
+
+            .containerXII{
+                width: 100%;
+                 /* height:700px;  */
+                display: flex;
+                justify-content: center;
+                margin-top:15px;
+        
+            }
+
+
+
+
+             .base5{
+                width:240px;
+                height:200px;
+                background-image:url('cat-5.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+            }
+
+            .base6{
+                width:240px;
+                height:200px;
+                background-image:url('cat-6.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            }
+
+            .base7{
+                width:240px;
+                height:200px;
+                background-image:url('cat-7.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            }
+
+            .base8{
+                width:240px;
+                height:200px;
+                background-image:url('cat-8.jpg');
+                background-repeat: no-repeat;
+                border-radius:6%;
+                margin-left:1% ;
+            } 
+
+        .center h1{
+                text-align: center;
+                padding-top:70px;
+                color:gold;
+                font-size: 35px;
+            }
+
+            .center h3{
+                text-align: center;
+                margin-top:-20px;
+                color: gold;
+                font-size: 20px;
+            }
+
+
+
+
+
+
+ .containerIX{
+                width: 100%;
+                background-color: red;
+                display: flex;
+                justify-content: center;
+        
+            }
+
+            .area1{
+                width:35%;
+                height:250px;
+                background-image:url('course-1.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area2{
+                width: 35%;
+                height:250px;
+                background-image:url('course-2.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area3{
+                width:35%;
+                height:250px;
+                background-image:url('course-3.jpg');
+                background-repeat: no-repeat;
+            }
+
+            
+            .containerIX1{
+                width: 100%;
+                
+                background-color:blue; 
+                display: flex;
+                justify-content: center;
+        
+            }
+
+
+             .area4{
+                width:35%;
+                height:250px;
+                background-image:url('course-4.jpg');
+                background-repeat: no-repeat;
+            }
+
+
+
+             .area5{
+                width:35%;
+                height:250px;
+                background-image:url('course-5.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area6{
+                width:35%;
+                height:250px;
+                background-image:url('course-6.jpg');
+                background-repeat: no-repeat;
+            } 
+
+
+
+.header h1{
+text-align: center;
+font-size:40px;
+color: orange;
+}
+
+.header h5{
+text-align: center;
+font-size: 30px;
+color:gray;
+}
+
+
+.musa h1{
+text-align: center;
+font-size:40px;
+color: orange;
+}
+
+.musa h6{
+text-align: center;
+font-size: 30px;
+color:gray;
+}
+
+
+
+.containerXI{
+                            width: 100%;
+                             /* height:700px;  */
+                            display: flex;
+                            justify-content: center;
+                    
+                        }
+            
+                        .base1{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-1.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                        }
+            
+                        .base2{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-2.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        }
+            
+                        .base3{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-3.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        }
+            
+                        .base4{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-4.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        }
+            
+                        .containerXII{
+                            width: 100%;
+                             /* height:700px;  */
+                            display: flex;
+                            justify-content: center;
+                            margin-top:15px;
+                    
+                        }
+            
+            
+            
+            
+                         .base5{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-5.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                        }
+            
+                        .base6{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-6.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        }
+            
+                        .base7{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-7.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        }
+            
+                        .base8{
+                            width:240px;
+                            height:200px;
+                            background-image:url('cat-8.jpg');
+                            background-repeat: no-repeat;
+                            border-radius:6%;
+                            margin-left:1% ;
+                        } 
+            
+                    .center h1{
+                            text-align: center;
+                            padding-top:70px;
+                            color:gold;
+                            font-size: 35px;
+                        }
+            
+                        .center h3{
+                            text-align: center;
+                            margin-top:-20px;
+                            color: gold;
+                            font-size: 20px;
+                        }
+            
+
+                        .container15{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width:100%;
+            }
+
+            .containerXV{
+            background-color:white;
+            width:70%;
+            height:200px;
+            }
+                    .containerXVI{
+                    position:relative;
+                    background-size:cover;
+                    background-color:pink;
+                    width:30%;
+                    height:350px;
+            border-radius:20px;
+            margin:20px;
+                    }
+            
+            .containerXVI img{
+            width:100%;
+            height:47%;
+            border-radius: 20px 20px 0 0;
+            /* border-top-left-radius:20px; */
+            
+            }
+            .containerXVII .leftQ {
+            float:left;
+            margin-left:20px;
+            }
+            
+            .containerXVII .rightQ {
+            float:right;
+            margin-right:20px;
+            }
+            
+            .containerXVIII{
+            clear:both;
+            margin:20px;
+            padding-bottom:20px;
+            border-bottom:solid 0.5px green;
+            
+            }
+            .containerXVIII a {text-decoration:none;
+            color: brown;}
+            .click-text{
+                    position:absolute;
+                    top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color:red;
+            text-decoration:none;
+            font-size:24px;
+            
+            }
+            .left-text{
+            text-align:left
+            }
+            
+            
+            .price-tag{
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform:translateX(-50%);
+            background-color:#fff;
+            padding:5px;
+            border-radius:5px 10px;
+            }
+            
+             h3{
+                justify-content: center;
+                color:orangered;
+                text-align: center;
+            }
+                    
+            h1{
+                color:#0a0909;
+                text-align: center;
+            }   
+            
+            
+            /* mvmhfhfhhfhcmcm */
+
+            #main{
+        width:100%;
+        height: 700px;
+        background-image: linear-gradient(rgb(0,0,0), rgba(8,11,15,0.1)), url(cat-9.jpg);
+    }
+    
+    .floatin{
+        width: 100%;
+        height: 100%;
+            /* float: left; */
+            background-image: linear-gradient(rgb(0,0,0), rgba(8,11,15,0.1)), url(cat-9.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
+  .image-div img{
+width:100%;
+height:700px;
+margin-top:10px;
+background-attachment: fixed;
+background-position:center;
+background-size:100%;
+}  
+.rice{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-80%,-50%); 
+z-index: 23;
+ margin-top: 2400px;
+
+}
+
+
+.yam{
+    background-color: red;
+    width:30%;
+    height:400px;
+    border-radius: 10px;
+     display:flex;
+     flex-direction: column; 
+    justify-content: center;
+    float: right;
+    margin-top: 150px;
+    margin-right: 10px;
+ 
+}
+
+
+form{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    }
+    input,select{border: none;
+}
+
+.brusher {
+    width: 100%;
+    height: 80px;
+    background-color:gainsboro;
+    border-radius: 10px 10px 0 0 ;
+    text-align: center;
+    margin-top: -120px;
+
+}
+
+.blue{height:40px;
+    background-color:darkblue ;
+    color: white;
+}
+
+
+/* .top{
+    margin-top: 20px;} */
+
+    .roller{
+    width: 270px; 
+    height: 40px;
+ 
+    border-radius: 5px;
+   
+
+} 
+
+table{margin-top: 20px;
+}
+
+td{
+border:5px solid orangered;}
+
+tr{margin-bottom:40px;}
+
+table tr td{
+    background-color:whitesmoke;
+    /* width: 75%; */
+
+    
+    width: 260px;
+    height: 40px;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+.containerG{
+                background-color:white;
+                width:100%;
+                height:550px;
+            }
+
+.container4{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width:100%;
+            }
+
+.container4{
+		padding-top:40px;
+                margin-bottom:20px;
+
+}
+            .squareG{
+                width: 20.5%;
+                height: 300px;
+                background-color:grey;
+                margin-left: 10px;
+                margin-right:10px;
+                border-radius:30px;
+            }
+
+
+
+	#apple{
+
+                width: 200px;
+                height: 200px;
+                background-color:pink;
+                margin: 10px;}
+
+#img1{
+
+            width: 100%;
+height:190px;
+border-radius:30px 30px 0 0;
+margin-top:-20px;
+                 }
+
+
+#img2{
+
+            width: 100%;
+height:190px;
+border-radius:30px 30px 0 0;
+margin-top:-20px;
+                 }
+
+#img3{
+
+            width: 100%;
+height:190px;
+border-radius:30px 30px 0 0;
+margin-top:-20px;
+                 }
+
+#img5{
+
+            width: 100%;
+height:190px;
+border-radius:30px 30px 0 0;
+margin-top:-20px;
+margin-bottom:1px;
+                 }
+
+/* zzzzzzzzzzzzzzzzzzzzzzz */
+
+
+.containerI{
+width:100%;
+height:120%;
+font-size:40px;
+text-align:center;
+background-color:white;}
+
+.containerII{
+width:100%;
+height:180px;
+font-size:40px;
+text-align:center;
+background-color:white;
+margin-top:-400px;}
+
+.containerIII{
+width:80%;
+height:80px;
+font-size:25px;
+text-align:center;
+background-color: white;
+margin-bottom:-200px;
+display:flex;
+margin:auto;
+padding-top:-400px;
+
+}
+
+.iron{
+width:30%;
+height:70px;
+margin-left:10px;
+margin-right:20px;
+}
+.steel{
+width:30%;
+height:70px;
+margin-left:10px;
+margin-right:20px;
+}
+.metal{
+width:30%;
+height:70px;
+margin-left:10px;
+margin-right:20px;
+}
+
+.iron img{
+width:100%;
+height:350px;
+border-radius:10px 10px 10px 10px ;
+}
+
+.steel img{
+width:100%;
+height:350px;
+border-radius:10px 10px 10px 10px;
+}
+
+.metal img{
+width:100%;
+height:350px;
+border-radius:10px 10px 10px 10px;
+}
+
+.iron h5{
+margin-top:-90px; 
+color: white;
+}
+.iron h6{
+margin-right:250px; 
+margin-top:-20px;
+color: orangered;
+}
+
+
+.steel h5{
+margin-top:-90px; 
+color: white;
+}
+ .steel h6{
+margin-right:250px; 
+margin-top:-20px;
+color: orangered;
+} 
+
+
+.metal h5{
+margin-top:-90px; 
+color: white;
+}
+.metal h6{
+margin-right:250px; 
+margin-top:-20px;
+color: orangered;
+}
+
+/* nnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
+.containerV{
+width:100%;
+height:400px;
+background-color:grey;
+margin-top: 10px;
+display: flex;
+}
+
+.speed1,.speed2,.speed3{
+width:30%;
+height:300px;
+background-color:grey;
+font-size:20px;
+color:white;
+justify-content: center;
+align-items:center;
+position: relative;
+margin-top:95px;
+margin-left:40px;
+}
+
+
+ h1{
+font-size:20px;
+color:orangered;
+}
+
+.containerVI{
+    width: 100%;
+    height:80px;
+    background-color: grey;
+    margin-top:1px;
+    display: inline-flex;
+    color:red;
+    }
+
+
+
+    .forceA{
+        width: 60%;
+        height: 30px;
+        color:white;
+        display: inline-flex;
+        position: relative;
+        border: 50px;
+        margin-right: 20px;
+        cursor: pointer;
+        
+    }
+    .forceA span{
+        color: orangered;
+        cursor: pointer;
+    }
+    .forceA span:hover{
+        color:orangered;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .y1,.y2,.y3,.y4{
+            display: flex;
+            padding:40px;
+            margin-right: 30px;
+            /* margin-bottom:40px; */
+            align-items: center;
+            color: antiquewhite;
+
+        }
+
+        a:hover{
+            color: aliceblue;
+            text-decoration: none;
+            border: 1px solid red;
+            padding: 5px 5px;
+            background-color: red;
+            border: 2px;
+            width: 5px;
+        }
+        
+        .y1 h1 a:hover{
+            text-decoration: none;
+            border: 1px solid red;
+            padding: 5px 5px;
+            background-color:red;
+            color: antiquewhite;
+        }
+
+        #email{
+            padding: 20px 0;
+            margin-left: 10px;
+            border-radius:10px 0 0px 10px ;
+            text-align: center;
+            margin: -10px;
+            margin-top: 40px;
+        }
+        button{
+            padding: 20px 20px;
+            margin-left:-10px;
+            background-color: orangered;
+            width:30%;
+            border-radius:0px 10px 10px 0px ;
+       }
+/* 
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
+
+</style>
+    </head>
+    <body>
+    
+        <div id="top">
+            <div class="m1"><span class="orange">E</span>COURSES</div>
+            <div class="m2"><h4>Our office</h4><h5>28 Road Kano, Nigeria </h5></div>
+            <div class="m3"><h4>Email</h4><h5>almightyprincecj@gmail.com</h5></div>
+            <div class="m4"><h4>Call Us</h4><h5>+2349030014042</h5></div>
+        </div>
+
+            <div id="top2">
+           
+            
+                <div class="m5"><span class="orange">Subject</span></div>
+                <div class="m6"><span class="orange">Home</span></div>
+                <div class="m7">About</div>
+                <div class="m8">Course</div>
+                <div class="m9">Teacher</div>
+                <div class="m10">Blog</div>
+                <div class="m11">Contact</div>
+                <div class="m12"><span class="white">Join Now</span></div>
+            </div>
+
+
+        <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+
+      <div class="autoflow containerTEN">
+     
+      
+        <div class="left">
+          <div class="circle"></div> 
+              <div class="circle"></div> 
+              <div class="circle"></div> 
+        </div>
+      
+        <div class="right">
+          <h4>BEST ONLINE COURSES</h4>
+          <h1>BEST EDUCATION FROM <br>YOUR HOME</h1>
+          <div>Learn More</div>
+        </div>
+      </div>
+      
+      
+       <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+      <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+      <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+      <div class="containerVIII">
+
+        <div class="velocity1">
+        
+            <p> ABOUT US</p>
+            <h1>Innovative Way To Learn</h1>
+            <h3>i have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go men i have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go men</h3>
+            <h2>Learn More</h2>
+        </div>
+                <div class="velocity2">
+                  <!-- Image  -->
+        </div> 
+
+        <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+        <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+        <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+        <!-- <div>
+          <div class="musa">
+            <h1>SUBJECTS</h1>
+            <h6>Explore   Top  Subjects</h6>
+          </div>
+
+          <div>
+            <div class="containerXI">
+                <div class="base1">
+                    <div class="center">
+                    <h1>Web Design</h1>
+                    <h3>100 Courses</h3>
+                    </div>
+                </div>
+                <div class="base2">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base3">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base4">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+            </div>
+
+            <div class="containerXII">
+
+                <div class="base5">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base6">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base7">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base8">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+</div> 
+  
+          <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div> -->
+          <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+          <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+  
+  
+          
+                    
+                    
+                    <!--2 -->
+            
+
+        
+
+                    
+           
+
+
+                     <div>
+                            <div class="containerXI">
+                                <div class="base1">
+                                    <div class="center">
+                                    <h1>Web Design</h1>
+                                    <h3>100 Courses</h3>
+                                    </div>
+                                </div>
+                                <div class="base2">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                                <div class="base3">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                                <div class="base4">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                            </div>
+                
+                            <div class="containerXII">
+                
+                                <div class="base5">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                                <div class="base6">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                                <div class="base7">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                                <div class="base8">
+                                    <div class="center">
+                                        <h1>Web Design</h1>
+                                        <h3>100 Courses</h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+
+
+        
+<div class="container15">
+
+            <div class="containerXV">
+                    <h3>COURSES</h3>
+                <h1>OUR POPULAR COURSES</h1>
+                </div>
+
+<div class="containerXVI">
+<img src="course-1.jpg">
+
+<div class="containerXVII">
+<p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+</div>
+<div class="containerXVIII">
+<a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+</div>
+<div class="containerXVII">
+<p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+</div>
+
+</div>
+
+
+
+
+<!--2 --><div class="containerXVI">
+    <img src="course-2.jpg">
+
+    <div class="containerXVII">
+    <p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+    
+    </div>
+    <div class="containerXVIII">
+    <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+    </div>
+    <div class="containerXVII">
+    <p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+    </div>
+    
+    </div>
+    
+    
+
+<!--2 --><div class="containerXVI">
+    <img src="course-3.jpg">
+
+    <div class="containerXVII">
+    <p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+    
+    </div>
+    <div class="containerXVIII">
+    <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+    </div>
+    <div class="containerXVII">
+    <p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+    </div>
+    
+    </div>
+    
+    
+    
+
+
+<!--2 --><div class="containerXVI">
+    <img src="course-4.jpg">
+
+    <div class="containerXVII">
+    <p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+    
+    </div>
+    <div class="containerXVIII">
+    <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+    </div>
+    <div class="containerXVII">
+    <p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+    </div>
+    
+    </div>
+    
+
+
+<!--2 --><div class="containerXVI">
+    <img src="course-5.jpg">
+
+    <div class="containerXVII">
+    <p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+    
+    </div>
+    <div class="containerXVIII">
+    <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+    </div>
+    <div class="containerXVII">
+    <p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    <!--2 --><div class="containerXVI">
+    <img src="course-6.jpg">
+    
+    <div class="containerXVII">
+    <p class="leftQ">25 students</p><p class="rightQ">01h 30m</p>
+    
+    </div>
+    <div class="containerXVIII">
+    <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+    </div>
+    <div class="containerXVII">
+    <p class="leftQ">4.5(250)</p><p class="rightQ">$99</p> 
+    </div>
+    
+    </div>
+    </div>
+
+
+    <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+    <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+    <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+
+
+    <div id="main"class="floatin">
+        <div class="image-div">
+            <!-- <img src="cat-images/cat-9.jpg"> -->
+            <div class="rice">
+            <p style="color: orangered;font-size: 25px;">NEED ANY COURSES</p>
+            <p style="color: white;font-size:40px;">30% Off For New Students</p>
+            <p style="color: white;font-size: 25px;">cat and dog cat and dog cat cat and dog cat and dog cat  cat and dog cat and dog cat <br> cat and dog cat and dog cat</p>
+            <p style="color:white;font-size:25;">cat and dog are enemies forever</p>
+            <p style="color:white;font-size:25;">cat and dog are enemies forever</p>
+            <p style="color:white;font-size:25;">cat and dog are enemies forever</p> 
+        
+        </div>
+
+        <div class="yam">
+            <div class="brusher">
+                <h1> Sign Up Now</h1>
+            </div>
+            <div>
+                <form>
+                    <table>   
+                    <!-- <label for="name">Name:</label> -->
+                    <tr><td><input class="roller top" type="text"id="name" name="name" placeholder="enter your name" required></td></tr>
+    
+                    
+                    <!-- <label for="email">Email:</label> -->
+                    <tr><td> <input  class="roller"  type="text"id="email" name="email" placeholder="enter your email" required></td></tr>
+    
+    
+                    <!-- <label for="course">select a course:</label> -->
+                    <tr><td><select   class="roller" id="course"name="course">
+                        <option value="" disabled selected>Select a Course</option>
+                        <option value="course1">Course 1</option>
+                        <option value="course2">Course 2</option>
+                        <option value="course3">Course 3</option>
+                        </select></td></tr>
+                        <tr><td class="blue">  <button  class="roller blue" type="submit">Sign in</button></td></tr>
+                    </table>
+                </form>
+            </div>
+                </div>
+        </div>
+
+</div>
+    <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+    <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+    <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+
+
+    <div class="containerG">
+        <div class="container3"><p style="color:orange;font-size:40px;text-align:center;">TEACHERS</p><p style="color:black;font-size:40px;text-align:center;">Meet Our Teachers</p></div>
+        <div class="container4">
+            <div class="squareG" ><img id="img1" src="team-11.jpg"><p style="color:black;font-size:25px;text-align:center;">Prince mark</p><p style="color:black;font-size:25px;text-align:center;">Web Designer</p></div>
+            <div class="squareG" ><img id="img2" src="team-12.jpg"><p style="color:black;font-size:25px;text-align:center;">Prince mark</p><p style="color:black;font-size:25px;text-align:center;">Web Designer</p></div>
+            <div class="squareG" ><img id="img3" src="team-13.jpg"><p style="color:black;font-size:25px;text-align:center;">Prince mark</p><p style="color:black;font-size:25px;text-align:center;">Web Designer</p></div>
+            <div class="squareG" ><img id="img5" src="team-15.jpg"><p style="color:black;font-size:25px;text-align:center;">Prince mark</p><p style="color:black;font-size:25px;text-align:center;">WebDesigner</p></div>
+
+        </div>
+</div>
+
+<div style="clear: both; height: 0px;margin-top: -14px;"></div>
+    <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+    <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+
+
+    <div class="containerI"><p style="color:orange";>TESTIMONIAL</p><p style="color:dark-blue";>What Says Our Students</p>
+    </div>
+    
+    <div class="containerII"><p style="color:orange";>OUR BLOG</p><p style="color:dark-blue";>Latest From Our Blog</p>
+    </div>
+    
+    <div class="containerIII">
+        <div class="iron"><img src="blog-1.jpg">
+            <h5>to become great ,you must study hard</h5>
+            <h6>Feb 21,2024</h6>
+        </div>
+    
+     <div class="steel"><img src="blog-2.jpg">
+        <h5>to become great ,you must study hard</h5>
+            <h6>Feb 21,2024</h6>
+            </div>
+    
+        <div class="metal"><img src="blog-3.jpg">
+            <h5>to become great ,you must study hard</h5>
+            <h6>Feb 21,2024</h6>
+            </div>
+        
+    </div>
+    
+    
+    
+    
+    </div>
+
+    
+
+
+    <div style="clear: both; height: 0px;margin-top:3720px;"></div>
+<div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+<div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+
+<div class="containerV">
+    <div class="speed1">
+        <h1>GET IN TOUCH</h1>
+        <h4>21 Paddy Chucka street,lagos nigeria</h4>
+        <h4>+2348112083489</h4>
+        <h4>almightypricecj@gmail.com</h4>
+    </div>
+    <div class="speed2">
+        <h1>OUR COURSES</h1>
+        <h4>Web Design</h4>
+        <h4>App Design</h4>
+        <h4>Marketing</h4>
+        <h4>Research</h4>
+        <h4>SEO</h4>
+    </div>
+    <div class="speed3">
+        <h1>NEWS LETTER</h1>
+        <h4>A Noun is a name of a person animal plaace or things. example Ada Obi Ade Lion Tiger Car Donkey etc</h4>
+        <form>
+        <tr><td><input type="email"size="40px"name="email"id="email"placeholder="enter your email"></td></tr>
+        <button>Sign Up</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    <div class="containerVI">
+        <div class="forceA">
+            <h4> <span>Domain Name.</span> All Right Reserved. Designed by <span>HTML Codex</span></h4>
+    </div>
+    <div class="y1">
+        <h4><a href="#">Privacy</a></h4>
+        </div>
+    
+        <div class="y2">
+        <h4><a href="#">Terms</a></h4>
+        </div>
+    
+        <div class="y3">
+        <h4><a href="#">FAQs</a></h4>
+        </div>
+    
+        <div class="y4">
+        <h4><a href="#">Help</a></h4>
+        
+    </div>
+    </div>
+    
+    
+    <!--2 -->
+
+
+
+
+
+
+
+
+    </body>
+    </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sum.js"></script>
+    <link rel="stylesheet" href="sum.css">
+</head>
+<body>
+    <div>
+        <form action="">
+            <div id="uni">
+                <div class="red">
+                    <ul>
+                        <li>
+                            <span>INPUT</span>
+                            <br>
+                            <li>
+                                <input type="number" placeholder="Number 1" id="in">
+                            </li>
+                        </li>
+
+                        <li>
+                            <span>INPUT</span>
+                            <br>
+                            <li>
+                                <input type="number" placeholder="Number 2" id="put">
+                            </li>
+                        </li>
+    
+    
+                    </ul>
+                
+                    <ul>
+                        <li>
+                            <span>INPUT</span>
+                            <br>
+                            <li>
+                                <input type="number" placeholder="Number 3" id="on">
+                            </li>
+                        </li>
+
+                        <li>
+                            <span>INPUT</span>
+                            <br>
+                            <li>
+                                <input type="number" placeholder="Number 4" id="off">
+                            </li>
+                        </li>
+    
+    
+                    </ul>
+                
+                </div>
+            
+                <br>
+                <div class="yellow">
+                    <div class="green">
+                        <ul class="big">
+                            <li><input type="number" placeholder="Result A" id="display" disabled><br></li>
+                            <li><input type="number" placeholder="Result B" id="displa" disabled><br></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <br>
+                <div id="big">
+                    <input type="number" class="stress" placeholder="Result" id="stress" disabled>
+
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+    
+    <div class="blue">
+        <ul>
+            <li><button onclick="sum()">Addition</button></li><br>
+            <li><button onclick="minus()">Subtraction</button></li><br>
+            <li><button onclick="times()">Multiplication</button></li><br>
+            <li><button onclick="divide()">Division</button></li><br>
+            <li><button class="stress" onclick="square()">Square</button></li><br>
+            <li><button class="stone" onclick="squareroot()">Square root</button></li><br>
+        </ul>
+    </div>
+    
+</body>
+</html>

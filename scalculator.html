@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sci calculator</title>
+    
+    <link rel="stylesheet" href="scalculator.css">
+</head> 
+<body>
+    
+        <div class="container">
+            <div class="display">
+                <input id="screen" type="text" placeholder="0">
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ce" onclick="backspc()">CE</button>
+                    <button onclick="fact()">x!</button>
+                    <button class="btn">(</button>
+                    <button class="btn">)</button>
+                    <button class="btn"></button>
+                    <button class="btn">%</button>
+                    <button id="ac" onclick="screen.value=''">AC</button>
+                </div>
+
+                <div class="row">
+                    <button id="sin-1"><span>sin<sup>-1</sup></span></button>
+                    <button id="cos-1"><span>cos<sup>-1</sup></span></button>
+                    <button id="tan-1"><span>tan<sup>-1</sup></span></button>
+                    <button id="sin-1"><span>log<sup>-1</sup></span></button>
+                    <button id="sin-1"><span> &larr; </span></button>
+                    <button id="sin-1"><span> &rarr; </span></button>
+                    <input type="button" value="list-style: none;><span>sin <sup>-1</sup></span>">
+                </div> 
+
+                <div class="row">
+                    <button class="btn">sin</button> <!-- Changed -->
+                    <button onclick="pi()">π</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">÷</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">x</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="sqrt()">√</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <input type="button" class="equ" value="=">
+                    <!-- <button id="eval" onclick="screen.value=eval(screen.value)">=</button> -->
+                    <!-- <button class="equ"> </button> -->
+                    <button class="btn">+</button>
+                </div>
+            </div>
+        </div>
+        
+    <script src="scalculator.js"></script>
+</body>   
+</html>

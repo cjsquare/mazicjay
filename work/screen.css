@@ -1,0 +1,146 @@
+.prince{
+    width: 300px;
+    height: 640px;
+    background-color:darkcyan;
+    border: 30px;
+    border-radius: 20px;
+    position: absolute;
+    padding: 15px;
+
+
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial,sans-serif;
+    background-color: #f0f2f5;
+    /* height: 100vh; */
+    box-sizing: border-box;
+    margin-top: -350px;
+    margin-right: 300px;
+
+
+}
+.phone-screen{
+    width: 100%;
+    height: 99.8%;
+    display: flex;
+    background-color:darkcyan; 
+    border-radius: 15px;
+    margin-top: -308px;
+
+}
+
+.login-container{
+    background-color:black;
+    width: 100%;
+    /* display: none; */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(red, green, blue, alpha); 
+    text-align: center;
+    /* background-image: url('Zenith-img1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: -1px;    
+}
+#innercam{
+    background-color: rgb(224, 219, 219);
+    width: 15px;
+    border-radius: 10px;
+    position: relative;
+    height: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    top: 30px;
+    margin-top: -30px;
+} 
+
+
+
+ #innerscreen{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    width: inherit;
+}
+
+input{
+    width:80%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+
+}
+
+button{
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.application{
+    margin-top: 300px;
+}
+
+.button-key{
+    width: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 120px;
+
+    
+    }
+
+
+.volume-up{
+    width: 30%;
+    padding: 0px 0 45px 2px; 
+    background-color:darkcyan;
+    border-radius: 0.4rem, 0 0.4rem;
+    margin-right: -310px;
+    margin-top: 15px;
+
+
+}
+
+.volume-down{
+    width: 30%;
+    padding: 0px 0 45px 2px;
+    background-color:darkcyan;
+    border-radius: 0.4rem, 0 0.4rem;
+    margin-right: -310px;
+    margin-top: 15px;
+
+
+}
+
+
+.power{
+     width: 30%; 
+    padding: 15px 0 40px 2px;
+    margin: 50px 0 0 0;
+    background-color:darkcyan;
+    border-radius: 0.4rem, 0 0.4rem;
+    margin-right: -310px;
+    margin-top:15px ;
+   
+}
+    

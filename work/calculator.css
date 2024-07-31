@@ -1,0 +1,16 @@
+input{
+    width:250px;
+    border-radius: 3px;
+    border-style: none;
+    height: 40px;
+}
+.number{
+    width: 60px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,138 @@
+*{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-self: center;
+    font-family: RyuGothic Regular;
+}
+
+#container{
+    width: 55vh;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    align-self: center;
+    /* align-items: right; */
+    padding-top: 5vh;
+    background-color: #0d2565;
+}
+
+#use{
+    width: 70vh;
+    height: 100vh;
+    background-color: #0d2565;
+    align-self: center;
+}
+
+#logo{
+    width: 5vh;
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-self: center;
+}
+
+/* body{
+    background-color: blue;
+} */
+
+input{
+    /* width: 40vh; */
+    height: 3vh;
+    color: white;
+    font-size: bold;
+    /* border-color: #0d2565; */
+    /* border-radius: 10px; */
+    /* border: 3px; */
+    /* border: none; */
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+fieldset{
+    border: 0.1vh solid white;
+    border-radius: 1vh;
+}
+
+legend{
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    display: none;
+}
+
+#sign {
+    background-color: #1d7960;
+    font-family: Arial;
+    font-size: 1.8vh;
+    color: #ffffff;
+    /* width: 41.5vh; */
+    height: 5vh;  
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    
+}
+
+.CBN{
+    align-self: center;
+    color: white;
+    /* font-family: Arial; */
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+p{
+    align-self: center;
+    color: white;
+    /* font-family: Arial; */
+    display: flex;
+    flex-direction: row;   
+}
+
+.new{
+    font-size: 14px;
+}
+/* .left{ */
+    /* width:0vh; */
+/* } */
+.left{
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    padding-left: 1vh;
+
+}
+
+input::placeholder{
+    font-family: Arial;
+    font-size: small;
+    font-weight: 200px;
+    color: white;
+    justify-items: center;
+}
+
+#checkbox{
+    height: 14px;
+    width: 14px;
+    border: 0px white solid;
+    outline: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.welcome{
+    font-family: Arial;
+    font-size: normal;
+}
+

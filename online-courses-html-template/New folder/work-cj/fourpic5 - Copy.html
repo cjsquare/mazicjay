@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>creating dom objects</title>
+<style type="text/css">
+  /* *{
+    margin: 0;
+    padding: 0;
+  } */
+ #top{
+        width: 100%;
+        height:120px;
+        /* background-color:green; */
+    }
+ #top2{
+        margin-top:-50px;
+        width: 100%;
+        height:100px;
+        border-top: solid 0.5px black;
+        /* background-color:red; */
+    }
+    #main{
+        width:100%;
+        height:500px;
+        background-color:gray;
+    }
+
+    .floatin{
+            float: left;
+         }   
+        
+    .mbonu2{
+                margin-left:70px;
+                margin-top: 20px;
+                width:8%;
+                height:70px;
+                margin-bottom: 10px;
+                float:left;
+                position: relative;
+                background-color:gray;
+            }
+            .mbonu3{
+                margin-left:55px;
+                margin-top: 20px;
+                width: 40%;
+                height: 200px;
+                margin-bottom: 10px;
+                float: right;
+                background-color:gray;
+                }
+          .m1{ 
+                margin-right: 2 0px;
+                margin-top: 20px;
+                width: 12%;
+                height: 28px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float:left;
+                /* background-color: aqua; */
+                font-size: 35px;
+                font-weight:bold;
+            }
+            .m2,.m3,.m4{
+                margin-left:220px;
+                margin-top: 20px;
+                width: 15%;
+                height: 20px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float: left;
+                /* background-color: palevioletred; */
+                }
+            
+                
+             .m5{
+                margin-inline:20px;
+                margin-top: 20px;
+                width: 5%;
+                height: 30px;
+                border: solid 5px olive;
+                margin-bottom: 10px;
+                float: left;
+                 background-color: olive; 
+                 
+                }
+            
+                
+        .m6,.m7,.m8,.m9,.m10,.m11{
+                margin-left: 100px;
+                margin-top: 20px;
+                width: 5%;
+                height: 20px;
+                /* border: solid 5px; */
+                margin-bottom: 10px;
+                float: left;
+                /* background-color: palevioletred; */
+                position:relative
+                }
+
+
+
+            .m12{
+                margin-right:20px;
+                margin-top: 20px;
+                width: 5%;
+                height: 30px;
+                 border: solid 5px  palevioletred; 
+                margin-bottom: 10px;
+                float: right;
+                background-color: palevioletred;
+                border-radius: 10px;
+                }
+                .orange{
+                    color:orangered;
+                    }
+
+                    .white{
+                    color:white;
+                    }
+
+                    .m6:hover,.m7:hover,.m8:hover,.m9:hover,.m10:hover,.m11:hover{
+                  color: blue;
+            text-decoration: none;
+            /* border: 5px solid red; */
+            /* padding: 5px 5px; */
+            /* background-color: red; */
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+
+                    .m5:hover{
+                  color: blue;
+            text-decoration: none;
+            border: 5px solid rgb(131, 184, 27); 
+            /* padding: 5px 5px; */
+            background-color: rgb(131, 184, 27);
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+                    .m12:hover{
+                  color: blue;
+            text-decoration: none;
+            border: 5px solid red;
+            /* padding: 5px 5px; */
+            background-color: red;
+            /* border: 2px;
+            width: 5px; */
+        
+                    }
+                    h4{
+                        padding: 0;
+                        margin-top: -8px;
+                        font-size: 20px;
+                    }
+                    h5{
+                        margin-top:-15px;
+                        font-size: 25;
+                    }
+
+
+
+                    *{
+        box-sizing: border-box;
+      } 
+      
+       .left {
+        float: left;
+        width: 20%;
+        padding: 0 20px;
+        height: 200px;
+        background-color: #3d4446;
+      } 
+      
+      .right {
+        background-color: #3d4446;
+        float: left;
+        width: 80%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+      
+      .circle{
+                      width:35px;
+                      height:35px;
+                      background-color: red;
+                      border-radius: 50%;
+                      margin-top:8px;
+                      margin:20px;
+          }
+      
+      
+      .autoflow{overflow:auto;} 
+      
+      
+      
+      
+      .right{
+        text-align: left;
+        height: 207px;
+        margin-top: -7px;
+      }
+      
+      .left{
+        text-align: left;
+        height: 200px;
+        margin-top: 0px;
+      }
+      
+      .right h4{
+        margin-top: 10px;
+      }
+      
+      .right h1{
+        margin-top: -5px;
+      }
+      
+      .right div{
+        color: beige;
+        background-color: orange;
+        border: 1px solid orange;
+        border-radius: 5%;
+        padding: 10px;
+        height: 40px;
+        width: 120px;
+        margin-top: -5px;
+      }
+
+
+ 
+      .containerVIII{
+width:100%;
+height:500px;
+background-color:grey;
+
+}
+
+.velocity1{
+width:60%;
+height:100px;
+text-align:center;
+color:blue;
+float:right;
+}
+
+.velocity2{
+width:100%;
+height:500px;
+background-image:url('blog-1.jpg');
+background-repeat:no-repeat;
+margin-left:120px;
+
+
+}
+
+h2{
+color:red;
+
+float:right;
+margin-right:490px;
+border-width:20px;
+}
+
+
+
+
+
+
+.container{
+                background-color:white;
+                width:100%;
+                height:500px;
+            }
+
+.container1,.container2{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width:100%;
+            }
+.container1{
+		            padding-top:40px;
+                margin-bottom:20px;
+
+}
+            .square{
+                width: 22.5%;
+                height: 200px;
+                background-color: yellowgreen;
+                margin-left: 10px;
+                margin-right:10px;
+                border-radius:30px;
+            }
+
+
+
+	#apple{
+
+                width: 200px;
+                height: 200px;
+                background-color:pink;
+                margin: 10px;}
+
+#img1{
+background-image:url('cat-1.jpg')}
+#img2{
+background-image:url('cat-2.jpg')}
+
+#img3{
+background-image:url('cat-3.jpg')}
+#img4{
+background-image:url('cat-4.jpg')}
+#img5{
+background-image:url('cat-5.jpg')}
+#img6{
+background-image:url('cat-6.jpg')}
+#img7{
+background-image:url('cat-7.jpg')}
+#img8{
+background-image:url('cat-8.jpg')}
+
+
+
+
+/* Image gallery two*/
+
+
+
+*{box-sizing:border-box;}
+
+
+
+
+.container15{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width:100%;
+}
+.containerXV{
+background-color:white;
+width:70%;
+height:200px;
+}
+        .containerXVI{
+        position:relative;
+        background-size:cover;
+        background-color:pink;
+        width:30%;
+        height:350px;
+border-radius:20px;
+margin:20px;
+        }
+
+.containerXVI img{
+width:100%;
+height:47%;
+border-radius: 20px 20px 0 0;
+/* border-top-left-radius:20px; */
+
+}
+.containerXVII .left {
+float:left;
+margin-left:20px;
+}
+
+.containerXVII .right {
+float:right;
+margin-right:20px;
+}
+
+.containerXVIII{
+clear:both;
+margin:20px;
+padding-bottom:20px;
+border-bottom:solid 0.5px green;
+
+}
+.containerXVIII a {text-decoration:none;
+color: brown;}
+.click-text{
+        position:absolute;
+        top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:red;
+text-decoration:none;
+font-size:24px;
+
+}
+.left-text{
+text-align:left
+}
+
+
+.price-tag{
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+background-color:#fff;
+padding:5px;
+border-radius:5px 10px;
+}
+
+ h3{
+    justify-content: center;
+    color:orangered;
+    text-align: center;
+}
+        
+h1{
+    color:#0a0909;
+    text-align: center;
+}    
+
+
+ .containerIX{
+                width: 100%;
+                background-color: red;
+                display: flex;
+                justify-content: center;
+        
+            }
+
+            .area1{
+                width:35%;
+                height:250px;
+                background-image:url('course-1.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area2{
+                width: 35%;
+                height:250px;
+                background-image:url('course-2.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area3{
+                width:35%;
+                height:250px;
+                background-image:url('course-3.jpg');
+                background-repeat: no-repeat;
+            }
+
+            
+            .containerIX1{
+                width: 100%;
+                
+                background-color:blue;
+                display: flex;
+                justify-content: center;
+        
+            }
+
+
+             .area4{
+                width:35%;
+                height:250px;
+                background-image:url('course-4.jpg');
+                background-repeat: no-repeat;
+            }
+
+
+
+             .area5{
+                width:35%;
+                height:250px;
+                background-image:url('course-5.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .area6{
+                width:35%;
+                height:250px;
+                background-image:url('course-6.jpg');
+                background-repeat: no-repeat;
+            } 
+
+
+
+.header h1{
+text-align: center;
+font-size:40px;
+color: orange;
+}
+
+.header h5{
+text-align: center;
+font-size: 30px;
+color:gray;
+}
+
+
+.musa h1{
+text-align: center;
+font-size:40px;
+color: orange;
+}
+
+.musa h6{
+text-align: center;
+font-size: 30px;
+color:gray;
+}
+
+
+
+
+
+
+/* for the image gallery section */
+
+
+
+
+.container15{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width:100%;
+}
+.containerXV{
+background-color:white;
+width:70%;
+height:200px;
+}
+        .containerXVI{
+        position:relative;
+        background-size:cover;
+        background-color:pink;
+        width:30%;
+        height:350px;
+border-radius:20px;
+margin:20px;
+        }
+
+.containerXVI img{
+width:100%;
+height:47%;
+border-radius: 20px 20px 0 0;
+/* border-top-left-radius:20px; */
+
+}
+.containerXVII .left {
+float:left;
+margin-left:20px;
+}
+
+.containerXVII .right {
+float:right;
+margin-right:20px;
+}
+
+.containerXVIII{
+clear:both;
+margin:20px;
+padding-bottom:20px;
+border-bottom:solid 0.5px green;
+
+}
+.containerXVIII a {text-decoration:none;
+color: brown;}
+.click-text{
+        position:absolute;
+        top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:red;
+text-decoration:none;
+font-size:24px;
+
+}
+.left-text{
+text-align:left
+}
+
+
+.price-tag{
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+background-color:#fff;
+padding:5px;
+border-radius:5px 10px;
+}
+
+ h3{
+    justify-content: center;
+    color:orangered;
+    text-align: center;
+}
+        
+h1{
+    color:#0a0909;
+    text-align: center;
+}    
+
+
+ 
+    </style>
+    </head>
+    <body>
+    
+        <div id="top">
+            <div class="m1"><span class="orange">E</span>COURSES</div>
+            <div class="m2"><h4>Our office</h4><h5>28 Road Kano, Nigeria </h5></div>
+            <div class="m3"><h4>Email</h4><h5>almightyprincecj@gmail.com</h5></div>
+            <div class="m4"><h4>Call Us</h4><h5>+2349030014042</h5></div>
+        </div>
+
+            <div id="top2">
+           
+            
+                <div class="m5"><span class="orange">Subject</span></div>
+                <div class="m6"><span class="orange">Home</span></div>
+                <div class="m7">About</div>
+                <div class="m8">Course</div>
+                <div class="m9">Teacher</div>
+                <div class="m10">Blog</div>
+                <div class="m11">Contact</div>
+                <div class="m12"><span class="white">Join Now</span></div>
+            </div>
+
+
+        <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+
+      <div class="autoflow containerTEN">
+     
+      
+        <div class="left">
+          <div class="circle"></div> 
+              <div class="circle"></div> 
+              <div class="circle"></div> 
+        </div>
+      
+        <div class="right">
+          <h4>BEST ONLINE COURSES</h4>
+          <h1>BEST EDUCATION FROM <br>YOUR HOME</h1>
+          <div>Learn More</div>
+        </div>
+      </div>
+      
+      
+       <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+      <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+      <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+      <div class="containerVIII">
+
+        <div class="velocity1">
+        
+            <p> ABOUT US</p>
+            <h1>Innovative Way To Learn</h1>
+            <h3>i have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go men i have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go meni have done it before in other field like physics<br>mathematics and further maths ,so therfore<br>i am good to go men</h3>
+            <h2>Learn More</h2>
+        </div>
+                <div class="velocity2">
+                  <!-- Image  -->
+        </div> 
+
+        <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+        <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+        <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+
+        <div>
+          <div class="musa">
+            <h1>SUBJECTS</h1>
+            <h6>Explore   Top  Subjects</h6>
+          </div>
+
+          <div>
+            <div class="containerXI">
+                <div class="base1">
+                    <div class="center">
+                    <h1>Web Design</h1>
+                    <h3>100 Courses</h3>
+                    </div>
+                </div>
+                <div class="base2">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base3">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base4">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+            </div>
+
+            <div class="containerXII">
+
+                <div class="base5">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base6">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base7">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+                <div class="base8">
+                    <div class="center">
+                        <h1>Web Design</h1>
+                        <h3>100 Courses</h3>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!--           
+        <div class="container">
+          <div class="container1">
+              <div class="square" id="img1">A</div>
+              <div class="square" id="img2">B</div>
+              <div class="square" id="img3">C</div>
+              <div class="square" id="img4">D</div>
+            </div>
+            <div class="container2">
+              <div class="square" id="img5">E</div>
+              <div class="square" id="img6">F</div>
+              <div class="square" id="img7">G</div>
+              <div class="square" id="img8">H</div>
+            </div>
+        </div> -->
+
+
+  
+          <div  class="bluebar" style="height: 40px; width:100%; background-color: blue; "></div>
+          <div style="clear: both; height: 0px;margin-top: -14px;"></div>
+          <div  class="greenbar" style="height: 20px; width:100%; background-color: green; "></div>
+  
+  
+          
+                    
+                    
+                    <!--2 -->
+            
+
+                    <div class="container15">
+
+                        <div class="containerXV">
+                        <h3>COURSES</h3>
+                        <h1>OUR POPULAR COURSES</h1>
+                </div>
+                <div class="containerXVI">
+                <img src="course-1.jpg">
+                
+                <div class="containerXVII">
+                <p class="left">25 students</p><p class="right">01h 30m</p>
+                </div>
+                <div class="containerXVIII">
+                <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                </div>
+                <div class="containerXVII">
+                <p class="left">4.5(250)</p><p class="right">$99</p> 
+                </div>
+                
+                </div>
+                
+                <!--2 --><div class="containerXVI">
+                        <img src="course-2.jpg">
+                
+                        <div class="containerXVII">
+                        <p class="left">25 students</p><p class="right">01h 30m</p>
+                        
+                        </div>
+                        <div class="containerXVIII">
+                        <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                        </div>
+                        <div class="containerXVII">
+                        <p class="left">4.5(250)</p><p class="right">$99</p> 
+                        </div>
+                        
+                        </div>
+                        
+                        
+                
+                <!--2 --><div class="containerXVI">
+                        <img src="course-3.jpg">
+                
+                        <div class="containerXVII">
+                        <p class="left">25 students</p><p class="right">01h 30m</p>
+                        
+                        </div>
+                        <div class="containerXVIII">
+                        <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                        </div>
+                        <div class="containerXVII">
+                        <p class="left">4.5(250)</p><p class="right">$99</p> 
+                        </div>
+                        
+                        </div>
+                        
+                        
+                        
+                
+                
+                <!--2 --><div class="containerXVI">
+                        <img src="course-4.jpg">
+                
+                        <div class="containerXVII">
+                        <p class="left">25 students</p><p class="right">01h 30m</p>
+                        
+                        </div>
+                        <div class="containerXVIII">
+                        <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                        </div>
+                        <div class="containerXVII">
+                        <p class="left">4.5(250)</p><p class="right">$99</p> 
+                        </div>
+                        
+                        </div>
+                        
+                
+                
+                <!--2 --><div class="containerXVI">
+                        <img src="course-5.jpg">
+                
+                        <div class="containerXVII">
+                        <p class="left">25 students</p><p class="right">01h 30m</p>
+                        
+                        </div>
+                        <div class="containerXVIII">
+                        <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                        </div>
+                        <div class="containerXVII">
+                        <p class="left">4.5(250)</p><p class="right">$99</p> 
+                        </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        <!--2 --><div class="containerXVI">
+                        <img src="course-6.jpg">
+                        
+                        <div class="containerXVII">
+                        <p class="left">25 students</p><p class="right">01h 30m</p>
+                        
+                        </div>
+                        <div class="containerXVIII">
+                        <a href="#"class="background-text">Web Design and Development Courses for Beginners</a>
+                        </div>
+                        <div class="containerXVII">
+                        <p class="left">4.5(250)</p><p class="right">$99</p> 
+                        </div>
+                        
+                        </div>
+                        </div>
+
+
+          <!-- <div>
+            <div class="header">
+              <h1>COURSES</h1>
+              <h5>Our Popular  Courses</h5>
+            </div>
+
+            <div class="containerIX">
+                <div class="area1"></div>
+                <div class="area2"></div>
+                <div class="area3"></div>
+            </div>
+      
+            <div class="containerIX1">
+      
+                <div class="area4"></div>
+                <div class="area5"></div>
+                <div class="area6"></div>
+            </div>
+        </div>  -->
+    </div>
+      
+
+
+
+
+    </body>
+    </html>

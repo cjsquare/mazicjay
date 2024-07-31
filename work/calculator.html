@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="calculator.css">
+<script src="calculator.js"></script>
+</head>
+<body>
+        <form name="display">
+             <input type="text" name="calculator" style="color:black;" disabled><br><br>
+            </form>
+                     
+                        <input type="button" class="number" style="background-color:green;color:white;" value="&#178;" onclick="display.calculator.value += 'd'">
+                        <input type="button" class="number" style="background-color:green;color:white;" value="&#8730;" onclick="display.calculator.value += Math.sqrt(display.calculator.value)">
+                        <input type="button" class="number" style="background-color:red;color:black;" value="%" onclick="display.calculator.value +='%'">
+
+                        <input type="button" class="number" style="background-color:green;color:white;" value="+" onclick="display.calculator.value +='+'"><br><br>
+                        <input type="button" class="number" style="background-color:orange;color:blue;" value="7" onclick="display.calculator.value +='7'">
+                        <input type="button" class="number" style="background-color:orange;color:blue;" value="8" onclick="display.calculator.value +='8'">
+                        <input type="button" class="number" style="background-color:orange;color:blue;" value="9" onclick="display.calculator.value +='9'">
+                        <input type="button" class="number" style="background-color:orange;color:blue;" value="*" onclick="display.calculator.value +='*'"><br><br>
+                        <input type="button" class="number" style="background-color:skyblue;color:black;" value="4" onclick="display.calculator.value +='4'">
+                        <input type="button" class="number" style="background-color:skyblue;color:black;" value="5" onclick="display.calculator.value +='5'">
+                        <input type="button" class="number" style="background-color:skyblue;color:black;" value="6" onclick="display.calculator.value +='6'">
+                        <input type="button" class="number" style="background-color:skyblue;color:black;" value="/" onclick="display.calculator.value +='/'"><br><br>
+                        <input type="button" class="number" style="background-color:purple;color:white;" value="1" onclick="display.calculator.value +='1'">
+                        <input type="button" class="number" style="background-color:purple;color:white;" value="2" onclick="display.calculator.value +='2'">
+                        <input type="button" class="number" style="background-color:purple;color:white;" value="3" onclick="display.calculator.value +='3'">
+                        <input type="button" class="number" style="background-color:purple;color:white;" value="-" onclick="display.calculator.value +='-'"><br><br>
+                        <input type="button" class="number" style="background-color:grey;color:pink;" value="0" onclick="display.calculator.value +='0'">
+                        <input type="button" class="number" style="background-color:grey;color:pink;" value="." onclick="display.calculator.value +='.'">
+                        <input type="button" class="number" style="background-color:black;color:orange;" value="C" onclick="display.calculator.value =''">
+                        <input type="button" class="number" style="background-color:grey;color:pink;" value="=" onclick="display.calculator.value = eval(display.calculator.value)">
+                                             
+    
+    
+</body>
+</html>
